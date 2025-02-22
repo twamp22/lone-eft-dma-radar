@@ -7,7 +7,7 @@
 - Config folder location is now at `%AppData%\eft-dma-radar`.
 
 ## Arena
-Arena is included, but needs modification to run (since it runs on Unity 2019 still). See the README.txt file in the arena folder for more details.
+Arena is included, but needs modification to run (since it runs on Unity 2019 still). See the README.txt file in the arena folder for more details. It is not connected to the main solution at the moment and will not be compiled.
 
 ## Contact
 - For any inquiries or assistance, feel free to join the [EFT Educational Resources Discord Server](https://discord.gg/jGSnTCekdx). Please confine discussion to the [Lone DMA Section](https://discord.com/channels/1218731239599767632/1342207117704036382).
