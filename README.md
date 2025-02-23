@@ -9,5 +9,10 @@
 ## Arena
 - See the [arena](https://github.com/Frostchi/lone-eft-dma-radar/tree/arena) branch.
 
+## Donations
+- If you would like to donate, any contribution is appreciated! <3
+  - Bitcoin: `bc1q7l4w7n3mt0rawztj0xl4me7mrnhjdr0hgjh2xp`
+  - Litecoin: `ltc1qlllsgdzq3dt2w2zchf7sxmy0t75sn4x6ethhez`
+
 ## Contact
 - For any inquiries or assistance, feel free to join the [EFT Educational Resources Discord Server](https://discord.gg/jGSnTCekdx). Please confine discussion to the [Lone DMA Section](https://discord.com/channels/1218731239599767632/1342207117704036382).
