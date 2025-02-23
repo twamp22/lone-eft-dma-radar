@@ -1,6 +1,6 @@
 ﻿using arena_dma_radar.Arena.GameWorld;
-using eft_dma_shared.Common.Players;
-using eft_dma_shared.Common.Unity;
+using LoneShared.Common.Players;
+using LoneShared.Common.Unity;
 
 namespace arena_dma_radar.Arena.ArenaPlayer
 {
@@ -85,6 +85,7 @@ namespace arena_dma_radar.Arena.ArenaPlayer
             IsHuman = true;
             Name = GetName();
             Type = PlayerType.Player;
+            StartPostAllocationTask();
         }
 
         /// <summary>

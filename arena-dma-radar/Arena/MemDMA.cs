@@ -5,9 +5,9 @@ using arena_dma_radar.UI.Misc;
 using VmmFrost;
 using arena_dma_radar.Arena.GameWorld;
 using System.Runtime;
-using eft_dma_shared.Common.DMA;
-using eft_dma_shared.Common.Unity;
-using eft_dma_shared.Common.Misc.Commercial;
+using LoneShared.Common.DMA;
+using LoneShared.Common.Unity;
+using LoneShared.Common.Misc.Commercial;
 
 namespace arena_dma_radar.Arena
 {
@@ -334,6 +334,15 @@ namespace arena_dma_radar.Arena
             {
                 throw new Exception("ERROR Getting Game Monitor Res", ex);
             }
+        }
+
+        /// <summary>
+        /// Force a Full Vmm Refresh.
+        /// </summary>
+        private void FullRefresh()
+        {
+            if (!(_hVMM?.SetConfig(Vmm.CONFIG_OPT_REFRESH_ALL, 1) ?? false))
+                LoneLogging.WriteLine("WARNING: Vmm Refresh Failed!");
         }
 
         public sealed class GameNotRunning : Exception

@@ -1,5 +1,5 @@
 ﻿using arena_dma_radar.Arena.ArenaPlayer;
-using eft_dma_shared.Common.Unity;
+using LoneShared.Common.Unity;
 
 namespace arena_dma_radar.UI.ESP
 {

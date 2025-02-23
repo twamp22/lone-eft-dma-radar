@@ -1,4 +1,4 @@
-﻿using eft_dma_shared.Common.Misc;
+﻿using LoneShared.Common.Misc;
 
 namespace arena_dma_radar.UI.SKWidgetControl
 {
