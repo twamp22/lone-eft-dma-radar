@@ -118,9 +118,8 @@ namespace eft_dma_shared.Common.DMA
                 "===TROUBLESHOOTING===\n" +
                 "1. Reboot both your Game PC / Radar PC (This USUALLY fixes it).\n" +
                 "2. Reseat all cables/connections and make sure they are secure.\n" +
-                "3. Changed Hardware/Operating System on Game PC? Reset your DMA Config ('Options' menu in Client) and try again.\n" +
-                "4. Make sure all Setup Steps are completed (See DMA Setup Guide/FAQ for additional troubleshooting).\n\n" +
-                "PLEASE REVIEW THE ABOVE BEFORE CONTACTING SUPPORT!");
+                "3. Changed Hardware/Operating System on Game PC? Delete your mmap.txt and symbols folder.\n" +
+                "4. Make sure all Setup Steps are completed (See DMA Setup Guide/FAQ for additional troubleshooting).");
             }
         }
 

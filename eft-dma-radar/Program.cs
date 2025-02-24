@@ -67,18 +67,34 @@ namespace eft_dma_radar
         [STAThread]
         static void Main(string[] args)
         {
-            ConfigureProgram();
-            Application.Run(new MainForm());
+            try
+            {
+                ConfigureProgram();
+                Application.Run(new MainForm());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), Program.Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
         }
 
         #region Private Members
 
         static Program()
         {
-            ConfigPath.Create();
-            var config = Config.Load();
-            eft_dma_shared.SharedProgram.Initialize(ConfigPath, config);
-            Config = config;
+            try
+            {
+                ConfigPath.Create();
+                var config = Config.Load();
+                eft_dma_shared.SharedProgram.Initialize(ConfigPath, config);
+                Config = config;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), Program.Name, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
         }
 
         /// <summary>
