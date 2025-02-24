@@ -65,6 +65,7 @@ namespace eft_dma_radar.UI.Radar
             flowLayoutPanel_RadarSettings = new FlowLayoutPanel();
             label2 = new Label();
             label24 = new Label();
+            linkLabel_CheckForUpdates = new LinkLabel();
             label1 = new Label();
             button_Restart = new Button();
             button_HotkeyManager = new Button();
@@ -286,7 +287,6 @@ namespace eft_dma_radar.UI.Radar
             Column_LootColorPicker = new DataGridViewButtonColumn();
             colorPicker1 = new ColorDialog();
             toolTip1 = new ToolTip(components);
-            linkLabel_CheckForUpdates = new LinkLabel();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             flowLayoutPanel_Loot.SuspendLayout();
@@ -751,6 +751,20 @@ namespace eft_dma_radar.UI.Radar
             label24.TabIndex = 46;
             label24.Text = "label24";
             // 
+            // linkLabel_CheckForUpdates
+            // 
+            linkLabel_CheckForUpdates.AutoSize = true;
+            flowLayoutPanel_RadarSettings.SetFlowBreak(linkLabel_CheckForUpdates, true);
+            linkLabel_CheckForUpdates.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel_CheckForUpdates.Location = new Point(9, 27);
+            linkLabel_CheckForUpdates.Margin = new Padding(3, 6, 3, 6);
+            linkLabel_CheckForUpdates.Name = "linkLabel_CheckForUpdates";
+            linkLabel_CheckForUpdates.Size = new Size(254, 15);
+            linkLabel_CheckForUpdates.TabIndex = 61;
+            linkLabel_CheckForUpdates.TabStop = true;
+            linkLabel_CheckForUpdates.Text = "Check for updates at lone-eft.com/opensource";
+            linkLabel_CheckForUpdates.LinkClicked += linkLabel_CheckForUpdates_LinkClicked;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -1191,6 +1205,7 @@ namespace eft_dma_radar.UI.Radar
             flowLayoutPanel_WebRadarSettings.Controls.Add(textBox_WebRadarPassword);
             flowLayoutPanel_WebRadarSettings.Controls.Add(linkLabel_WebRadarLink);
             flowLayoutPanel_WebRadarSettings.Dock = DockStyle.Top;
+            flowLayoutPanel_WebRadarSettings.Enabled = false;
             flowLayoutPanel_Settings.SetFlowBreak(flowLayoutPanel_WebRadarSettings, true);
             flowLayoutPanel_WebRadarSettings.Location = new Point(3, 564);
             flowLayoutPanel_WebRadarSettings.Name = "flowLayoutPanel_WebRadarSettings";
@@ -3355,20 +3370,6 @@ namespace eft_dma_radar.UI.Radar
             toolTip1.AutoPopDelay = 20000;
             toolTip1.InitialDelay = 500;
             toolTip1.ReshowDelay = 100;
-            // 
-            // linkLabel_CheckForUpdates
-            // 
-            linkLabel_CheckForUpdates.AutoSize = true;
-            flowLayoutPanel_RadarSettings.SetFlowBreak(linkLabel_CheckForUpdates, true);
-            linkLabel_CheckForUpdates.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabel_CheckForUpdates.Location = new Point(9, 27);
-            linkLabel_CheckForUpdates.Margin = new Padding(3, 6, 3, 6);
-            linkLabel_CheckForUpdates.Name = "linkLabel_CheckForUpdates";
-            linkLabel_CheckForUpdates.Size = new Size(254, 15);
-            linkLabel_CheckForUpdates.TabIndex = 61;
-            linkLabel_CheckForUpdates.TabStop = true;
-            linkLabel_CheckForUpdates.Text = "Check for updates at lone-eft.com/opensource";
-            linkLabel_CheckForUpdates.LinkClicked += linkLabel_CheckForUpdates_LinkClicked;
             // 
             // MainForm
             // 
