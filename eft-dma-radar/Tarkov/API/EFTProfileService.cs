@@ -134,7 +134,7 @@ namespace eft_dma_radar.Tarkov.API
                     /// Disabling it for now.
                     //result ??= await LookupFromEftApiTechAsync(accountId);
                     if (result is not null ||
-                        (result is null && _eftApiNotFound.Contains(accountId) && _tdevNotFound.Contains(accountId)))
+                        (result is null && /*_eftApiNotFound.Contains(accountId) &&*/ _tdevNotFound.Contains(accountId)))
                     {
                         Cache.Profiles[accountId] = result;
                     }
