@@ -97,7 +97,7 @@ namespace eft_dma_radar
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("ERROR Importing Lone Config(s). Close down the radar, and try copy your config files manually from %AppData%\\LonesClient TO %AppData%\eft-dma-radar\n\n" +
+                    MessageBox.Show("ERROR Importing Lone Config(s). Close down the radar, and try copy your config files manually from %AppData%\\LonesClient TO %AppData%\\eft-dma-radar\n\n" +
                         "Be sure to delete the Lones-Client folder when done.\n\n" +
                         $"ERROR: {ex}",
                         Program.Name,
