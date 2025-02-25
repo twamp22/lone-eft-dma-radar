@@ -2,8 +2,8 @@
 
 ![icon-static](https://github.com/user-attachments/assets/d3bc58ad-a987-4c94-bfe2-dd2236769f19)
 
-## Info
-- After March 21st I will keep a compiled build updated via [Releases](https://github.com/Frostchi/eft-dma-radar/releases/tag/compiled) on this page.
+## How do I start using this?
+- After March 21st I will keep a compiled build updated via [Releases](https://github.com/Frostchi/eft-dma-radar/releases/tag/compiled) on this page. Download the release and run the .EXE - simple.
 - Config folder location is now at `%AppData%\eft-dma-radar`.
 
 ## Arena
