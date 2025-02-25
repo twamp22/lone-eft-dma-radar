@@ -1782,5 +1782,15 @@ namespace arena_dma_radar.UI.Radar
             ScaleESPPaints();
         }
         #endregion
+
+        private void linkLabel_CheckForUpdates_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            const string updatesUrl = "https://lone-eft.com/opensource";
+            Process.Start(new ProcessStartInfo()
+            {
+                FileName = updatesUrl,
+                UseShellExecute = true
+            });
+        }
     }
 }

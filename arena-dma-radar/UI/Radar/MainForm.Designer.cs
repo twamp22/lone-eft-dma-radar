@@ -140,6 +140,7 @@
             label_Pos = new Label();
             skglControl_Radar = new SKGLControl();
             tabControl1 = new TabControl();
+            linkLabel_CheckForUpdates = new LinkLabel();
             tabPage2.SuspendLayout();
             flowLayoutPanel_Settings.SuspendLayout();
             flowLayoutPanel_RadarSettings.SuspendLayout();
@@ -205,6 +206,7 @@
             flowLayoutPanel_RadarSettings.BorderStyle = BorderStyle.FixedSingle;
             flowLayoutPanel_RadarSettings.Controls.Add(label2);
             flowLayoutPanel_RadarSettings.Controls.Add(label8);
+            flowLayoutPanel_RadarSettings.Controls.Add(linkLabel_CheckForUpdates);
             flowLayoutPanel_RadarSettings.Controls.Add(label1);
             flowLayoutPanel_RadarSettings.Controls.Add(button_Restart);
             flowLayoutPanel_RadarSettings.Controls.Add(button_HotkeyManager);
@@ -222,7 +224,7 @@
             flowLayoutPanel_Settings.SetFlowBreak(flowLayoutPanel_RadarSettings, true);
             flowLayoutPanel_RadarSettings.Location = new Point(3, 3);
             flowLayoutPanel_RadarSettings.Name = "flowLayoutPanel_RadarSettings";
-            flowLayoutPanel_RadarSettings.Size = new Size(1186, 146);
+            flowLayoutPanel_RadarSettings.Size = new Size(1186, 173);
             flowLayoutPanel_RadarSettings.TabIndex = 0;
             // 
             // label2
@@ -247,7 +249,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(10, 21);
+            label1.Location = new Point(4, 48);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(169, 45);
@@ -258,7 +260,7 @@
             // button_Restart
             // 
             button_Restart.Font = new Font("Segoe UI", 9.75F);
-            button_Restart.Location = new Point(186, 24);
+            button_Restart.Location = new Point(180, 51);
             button_Restart.Name = "button_Restart";
             button_Restart.Size = new Size(107, 41);
             button_Restart.TabIndex = 18;
@@ -268,7 +270,7 @@
             // 
             // button_HotkeyManager
             // 
-            button_HotkeyManager.Location = new Point(299, 24);
+            button_HotkeyManager.Location = new Point(293, 51);
             button_HotkeyManager.Name = "button_HotkeyManager";
             button_HotkeyManager.Size = new Size(107, 41);
             button_HotkeyManager.TabIndex = 34;
@@ -278,7 +280,7 @@
             // 
             // button_Radar_ColorPicker
             // 
-            button_Radar_ColorPicker.Location = new Point(412, 24);
+            button_Radar_ColorPicker.Location = new Point(406, 51);
             button_Radar_ColorPicker.Name = "button_Radar_ColorPicker";
             button_Radar_ColorPicker.Size = new Size(107, 41);
             button_Radar_ColorPicker.TabIndex = 21;
@@ -289,7 +291,7 @@
             // button_BackupConfig
             // 
             flowLayoutPanel_RadarSettings.SetFlowBreak(button_BackupConfig, true);
-            button_BackupConfig.Location = new Point(525, 24);
+            button_BackupConfig.Location = new Point(519, 51);
             button_BackupConfig.Name = "button_BackupConfig";
             button_BackupConfig.Size = new Size(107, 41);
             button_BackupConfig.TabIndex = 20;
@@ -301,7 +303,7 @@
             // 
             label_AimlineLength.Anchor = AnchorStyles.Right;
             label_AimlineLength.AutoSize = true;
-            label_AimlineLength.Location = new Point(4, 86);
+            label_AimlineLength.Location = new Point(4, 113);
             label_AimlineLength.Margin = new Padding(4, 0, 4, 0);
             label_AimlineLength.Name = "label_AimlineLength";
             label_AimlineLength.Size = new Size(88, 15);
@@ -314,7 +316,7 @@
             trackBar_AimlineLength.Anchor = AnchorStyles.Right;
             trackBar_AimlineLength.BackColor = SystemColors.Window;
             trackBar_AimlineLength.LargeChange = 50;
-            trackBar_AimlineLength.Location = new Point(100, 71);
+            trackBar_AimlineLength.Location = new Point(100, 98);
             trackBar_AimlineLength.Margin = new Padding(4, 3, 4, 3);
             trackBar_AimlineLength.Maximum = 1500;
             trackBar_AimlineLength.Minimum = 10;
@@ -329,7 +331,7 @@
             // 
             label_UIScale.Anchor = AnchorStyles.Right;
             label_UIScale.AutoSize = true;
-            label_UIScale.Location = new Point(199, 86);
+            label_UIScale.Location = new Point(199, 113);
             label_UIScale.Name = "label_UIScale";
             label_UIScale.Size = new Size(72, 15);
             label_UIScale.TabIndex = 28;
@@ -342,7 +344,7 @@
             trackBar_UIScale.BackColor = SystemColors.Window;
             flowLayoutPanel_RadarSettings.SetFlowBreak(trackBar_UIScale, true);
             trackBar_UIScale.LargeChange = 10;
-            trackBar_UIScale.Location = new Point(277, 71);
+            trackBar_UIScale.Location = new Point(277, 98);
             trackBar_UIScale.Maximum = 200;
             trackBar_UIScale.Minimum = 50;
             trackBar_UIScale.Name = "trackBar_UIScale";
@@ -354,7 +356,7 @@
             // checkBox_MapSetup
             // 
             checkBox_MapSetup.AutoSize = true;
-            checkBox_MapSetup.Location = new Point(3, 122);
+            checkBox_MapSetup.Location = new Point(3, 149);
             checkBox_MapSetup.Name = "checkBox_MapSetup";
             checkBox_MapSetup.Size = new Size(153, 19);
             checkBox_MapSetup.TabIndex = 9;
@@ -365,7 +367,7 @@
             // checkBox_Aimview
             // 
             checkBox_Aimview.AutoSize = true;
-            checkBox_Aimview.Location = new Point(162, 122);
+            checkBox_Aimview.Location = new Point(162, 149);
             checkBox_Aimview.Name = "checkBox_Aimview";
             checkBox_Aimview.Size = new Size(86, 19);
             checkBox_Aimview.TabIndex = 19;
@@ -376,7 +378,7 @@
             // checkBox_GrpConnect
             // 
             checkBox_GrpConnect.AutoSize = true;
-            checkBox_GrpConnect.Location = new Point(254, 122);
+            checkBox_GrpConnect.Location = new Point(254, 149);
             checkBox_GrpConnect.Name = "checkBox_GrpConnect";
             checkBox_GrpConnect.Size = new Size(112, 19);
             checkBox_GrpConnect.TabIndex = 33;
@@ -386,7 +388,7 @@
             // checkBox_HideNames
             // 
             checkBox_HideNames.AutoSize = true;
-            checkBox_HideNames.Location = new Point(372, 122);
+            checkBox_HideNames.Location = new Point(372, 149);
             checkBox_HideNames.Name = "checkBox_HideNames";
             checkBox_HideNames.Size = new Size(91, 19);
             checkBox_HideNames.TabIndex = 26;
@@ -400,7 +402,7 @@
             flowLayoutPanel_MemWriteCheckbox.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel_MemWriteCheckbox.Controls.Add(checkBox_EnableMemWrite);
             flowLayoutPanel_Settings.SetFlowBreak(flowLayoutPanel_MemWriteCheckbox, true);
-            flowLayoutPanel_MemWriteCheckbox.Location = new Point(3, 155);
+            flowLayoutPanel_MemWriteCheckbox.Location = new Point(3, 182);
             flowLayoutPanel_MemWriteCheckbox.Name = "flowLayoutPanel_MemWriteCheckbox";
             flowLayoutPanel_MemWriteCheckbox.Size = new Size(190, 25);
             flowLayoutPanel_MemWriteCheckbox.TabIndex = 45;
@@ -433,7 +435,7 @@
             flowLayoutPanel_MemWrites.Controls.Add(flowLayoutPanel_Chams);
             flowLayoutPanel_MemWrites.Dock = DockStyle.Top;
             flowLayoutPanel_Settings.SetFlowBreak(flowLayoutPanel_MemWrites, true);
-            flowLayoutPanel_MemWrites.Location = new Point(3, 186);
+            flowLayoutPanel_MemWrites.Location = new Point(3, 213);
             flowLayoutPanel_MemWrites.Name = "flowLayoutPanel_MemWrites";
             flowLayoutPanel_MemWrites.Size = new Size(1186, 191);
             flowLayoutPanel_MemWrites.TabIndex = 1;
@@ -919,7 +921,7 @@
             flowLayoutPanel_MonitorSettings.Controls.Add(button_DetectRes);
             flowLayoutPanel_MonitorSettings.Dock = DockStyle.Top;
             flowLayoutPanel_Settings.SetFlowBreak(flowLayoutPanel_MonitorSettings, true);
-            flowLayoutPanel_MonitorSettings.Location = new Point(3, 383);
+            flowLayoutPanel_MonitorSettings.Location = new Point(3, 410);
             flowLayoutPanel_MonitorSettings.Name = "flowLayoutPanel_MonitorSettings";
             flowLayoutPanel_MonitorSettings.Size = new Size(1186, 70);
             flowLayoutPanel_MonitorSettings.TabIndex = 2;
@@ -1014,7 +1016,7 @@
             flowLayoutPanel_ESPSettings.Controls.Add(flowLayoutPanel4);
             flowLayoutPanel_ESPSettings.Dock = DockStyle.Top;
             flowLayoutPanel_Settings.SetFlowBreak(flowLayoutPanel_ESPSettings, true);
-            flowLayoutPanel_ESPSettings.Location = new Point(3, 459);
+            flowLayoutPanel_ESPSettings.Location = new Point(3, 486);
             flowLayoutPanel_ESPSettings.Name = "flowLayoutPanel_ESPSettings";
             flowLayoutPanel_ESPSettings.Size = new Size(1186, 178);
             flowLayoutPanel_ESPSettings.TabIndex = 3;
@@ -1466,6 +1468,19 @@
             tabControl1.Size = new Size(1264, 681);
             tabControl1.TabIndex = 8;
             // 
+            // linkLabel_CheckForUpdates
+            // 
+            linkLabel_CheckForUpdates.AutoSize = true;
+            flowLayoutPanel_RadarSettings.SetFlowBreak(linkLabel_CheckForUpdates, true);
+            linkLabel_CheckForUpdates.Location = new Point(9, 27);
+            linkLabel_CheckForUpdates.Margin = new Padding(3, 6, 3, 6);
+            linkLabel_CheckForUpdates.Name = "linkLabel_CheckForUpdates";
+            linkLabel_CheckForUpdates.Size = new Size(255, 15);
+            linkLabel_CheckForUpdates.TabIndex = 47;
+            linkLabel_CheckForUpdates.TabStop = true;
+            linkLabel_CheckForUpdates.Text = "Check for updates at lone-eft.com/opensource";
+            linkLabel_CheckForUpdates.LinkClicked += linkLabel_CheckForUpdates_LinkClicked;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1627,6 +1642,7 @@
         private Button button_VischeckInvisColorPick;
         private RadioButton radioButton_Chams_Visible;
         private FlowLayoutPanel flowLayoutPanel_MemWriteCheckbox;
+        private LinkLabel linkLabel_CheckForUpdates;
     }
 }
 
