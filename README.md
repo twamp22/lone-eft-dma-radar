@@ -7,7 +7,7 @@
 - Config folder location is now at `%AppData%\eft-dma-radar`.
 
 ## Arena
-- See the [arena](https://github.com/Frostchi/lone-eft-dma-radar/tree/arena) branch.
+- Arena is supported and will be maintained going forward.
 
 ## Donations
 - If you would like to donate, any contribution is appreciated! <3
