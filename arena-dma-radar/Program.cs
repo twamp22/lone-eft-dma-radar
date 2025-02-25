@@ -83,12 +83,24 @@ namespace arena_dma_radar
         {
             try
             {
-                string loneCfgPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Lones-Client");
-                if (Directory.Exists(loneCfgPath))
+                try
                 {
-                    if (ConfigPath.Exists)
-                        ConfigPath.Delete(true);
-                    Directory.Move(loneCfgPath, ConfigPath.FullName);
+                    string loneCfgPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Lones-Client");
+                    if (Directory.Exists(loneCfgPath))
+                    {
+                        if (ConfigPath.Exists)
+                            ConfigPath.Delete(true);
+                        Directory.Move(loneCfgPath, ConfigPath.FullName);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("ERROR Importing Lone Config(s). Close down the radar, and try copy your config files manually from %AppData%\\LonesClient TO %AppData%\eft-dma-radar\n\n" +
+                        "Be sure to delete the Lones-Client folder when done.\n\n" +
+                        $"ERROR: {ex}",
+                        Program.Name,
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
                 }
                 ConfigPath.Create();
                 var config = Config.Load();
