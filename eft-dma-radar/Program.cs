@@ -85,7 +85,13 @@ namespace eft_dma_radar
         {
             try
             {
-                TryImportLoneConfigs();
+                string loneCfgPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Lones-Client");
+                if (Directory.Exists(loneCfgPath))
+                {
+                    if (ConfigPath.Exists)
+                        ConfigPath.Delete(true);
+                    Directory.Move(loneCfgPath, ConfigPath.FullName);
+                }
                 ConfigPath.Create();
                 var config = Config.Load();
                 eft_dma_shared.SharedProgram.Initialize(ConfigPath, config);
@@ -117,20 +123,6 @@ namespace eft_dma_radar
         {
             MainForm.Window?.PurgeSKResources();
             EspForm.Window?.PurgeSKResources();
-        }
-
-        private static void TryImportLoneConfigs()
-        {
-            var loneConfigPath = new DirectoryInfo(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Lones-Client"));
-            if (loneConfigPath.Exists)
-            {
-                ConfigPath.Create();
-                foreach (var file in loneConfigPath.EnumerateFiles())
-                {
-                    file.CopyTo(Path.Combine(ConfigPath.FullName, file.FullName));
-                }
-                loneConfigPath.Delete(true);
-            }
         }
 
         #endregion
