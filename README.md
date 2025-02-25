@@ -5,7 +5,7 @@
 ## How do I start using this?
 - After March 21st I will keep a compiled build updated via [Releases](https://github.com/Frostchi/eft-dma-radar/releases/tag/compiled) on this page. Download the release -> Unzip -> Run the .EXE -> Enjoy!
   - ![image](https://github.com/user-attachments/assets/dc6419e7-adae-47f2-a487-e7c88cce6c5b)
-- Config folder location is now at `%AppData%\eft-dma-radar`.
+- Config folder location is now at `%AppData%\eft-dma-radar`. This fork will attempt to automatically import your existing config(s) from the Managed Lone Service.
 
 ## Arena
 - Arena is supported and will be maintained going forward.
