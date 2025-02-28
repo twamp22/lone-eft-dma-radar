@@ -6,10 +6,12 @@
 This is an up-to-date build of Lone DMA EFT/Arena Radar. This is a standalone copy of the software with *No Restrictions*.
 
 ## How do I start using this?
-- After March 21st I will keep a compiled build updated via [Releases](https://github.com/Frostchi/eft-dma-radar/releases/tag/compiled) on this page. Download the Release -> Unzip -> Run the .EXE -> Enjoy!
-  - ![image](https://github.com/user-attachments/assets/dc6419e7-adae-47f2-a487-e7c88cce6c5b)
-- Setup instructions are included in the Download.
-- Config folder location is now at `%AppData%\eft-dma-radar`. This fork will attempt to automatically import your existing config(s) from the Managed Lone Service (if present).
+The compiled version will be available **After March 21st**. The current download is a placeholder.
+1. Download the [Release](https://github.com/Frostchi/eft-dma-radar/releases/tag/compiled).
+2. Unzip the downloaded package using the specified password `lone`.
+3. Run the .EXE
+4. Enjoy!
+![image](https://github.com/user-attachments/assets/dc6419e7-adae-47f2-a487-e7c88cce6c5b)
 
 ## Arena
 - Arena is supported and will be maintained going forward.
